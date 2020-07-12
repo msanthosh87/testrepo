@@ -8,7 +8,8 @@ import org.testng.annotations.Test;
 public class Scenarios {
     @Test
     public void test(){
-        System.setProperty("webdriver.chrome.driver","C:\\Automation\\Zeotap\\CustomNeutron\\drivers\\chromedriver.exe");
+
+        System.setProperty("webdriver.chrome.driver",System.getProperty("chromeDriver"));
         WebDriver driver = new ChromeDriver();
         driver.get("https://www.google.com");
         String expectedTitle = "Google";
