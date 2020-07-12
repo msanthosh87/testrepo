@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="googletestsuite" verbose="1" >
+    <test name="googletest" >
+        <classes>
+            <class name="googletest.Scenarios" />
+        </classes>
+    </test>
+</suite>
